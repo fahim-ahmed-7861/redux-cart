@@ -4,7 +4,7 @@ import { removeFromCart } from '../../redux/actions/cartActions';
 
 const Cart = (props) => {
 
-    const {cart,removeFromCart}=props;
+    const {cart,removeFromCart}=props.cart;
 
     console.log(cart);
 
@@ -15,7 +15,7 @@ const Cart = (props) => {
             <ul>
 
                 {
-                    cart.map(pd=>
+                   cart.map(pd=>
                         <div>
                        <h1>Name : {pd.name}</h1>
                 <li>{pd.id} <button onClick={()=>removeFromCart(pd.id,pd.productId)} >X</button></li>
@@ -30,6 +30,7 @@ const Cart = (props) => {
 
 const mapStateToProps=state=>
 {
+    console.log("11 ",state)
      return {
          cart:state.cart
      }

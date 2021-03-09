@@ -25,8 +25,8 @@ const Shop = (props) => {
 const mapStateToProps=state=>
 {
     return {
-        cart:state.cart,
-        products:state.products
+        cart:state.cart.cart,
+        products:state.cart.products
     }
 }
 
