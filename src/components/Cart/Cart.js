@@ -6,7 +6,7 @@ const Cart = (props) => {
 
     const {cart,removeFromCart}=props.cart;
 
-    console.log(cart);
+   // console.log(cart);
 
 
     return (

@@ -5,7 +5,7 @@ import Products from '../Products/Products';
 
 const Shop = (props) => {
 
-    console.log(props);
+    //console.log(props);
 
     const {products,addToCart}=props;
 

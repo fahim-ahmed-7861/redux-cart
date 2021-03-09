@@ -1,12 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { decrement, increment } from '../../redux/actions/StateCounterActions';
+import { store } from '../../redux/store/store';
 
 const StateCounter = (props) => {
 
    const {count,increment,decrement,cart}=props;
 
    console.log("FAHIM ",props,count);
+
+   console.log('store 1   ',store);
+
+   console.log('store 2   ',store.getState())
+
 
 
     return (
